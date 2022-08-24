@@ -6,9 +6,11 @@ A simple installation script includes common CLI tools for managing EKS
 
 Install all of the packages:
 
-`curl https://raw.githubusercontent.com/yiyu0x/eks-toolbox/master/installation.sh | sh`
+1. `git clone https://github.com/yiyu0x/eks-toolbox.git`
 
-All packages are lastest version and them will be installed to `/usr/local/bin`
+2. `./eks-toolbox/installation.sh`
+
+All packages are lastest version and them will be installed to `/usr/local/bin`.
 
 ## requirement
 
