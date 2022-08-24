@@ -47,3 +47,4 @@ install_awscli
 install_eksctl
 install_kubectl
 install_k9s
+clean
