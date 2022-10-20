@@ -22,3 +22,4 @@ Only supports Linux system currently, welcome to PR this project.
 - eksctl
 - kubectl
 - k9s
+- helm
