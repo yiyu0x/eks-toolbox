@@ -32,6 +32,11 @@ install_k9s() {
     && sudo cp "${TMP_DIR}/k9s/k9s" /usr/local/bin
 }
 
+install_helm() {
+    echo "installing helm..."
+    curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+}
+
 init() {
     [ ! -d $TMP_DIR ] && mkdir $TMP_DIR
 }
@@ -47,4 +52,5 @@ install_awscli
 install_eksctl
 install_kubectl
 install_k9s
+install_helm
 clean
