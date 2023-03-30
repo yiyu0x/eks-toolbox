@@ -27,7 +27,7 @@ install_kubectl() {
 install_k9s() {
     echo "installing k9s..."
     [ ! -d $TMP_DIR/k9s ] && mkdir $TMP_DIR/k9s
-    curl --silent --location "https://github.com/derailed/k9s/releases/latest/download/k9s_Linux_x86_64.tar.gz" \
+    curl --silent --location "https://github.com/derailed/k9s/releases/download/v0.27.3/k9s_Linux_amd64.tar.gz" \
     | tar xz -C "${TMP_DIR}/k9s" \
     && sudo cp "${TMP_DIR}/k9s/k9s" /usr/local/bin
 }
