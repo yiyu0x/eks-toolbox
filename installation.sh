@@ -22,6 +22,9 @@ install_kubectl() {
     [ ! -d $TMP_DIR/kubectl ] && mkdir $TMP_DIR/kubectl
     curl --silent -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -o "${TMP_DIR}/kubectl/kubectl" \
     && sudo install -o root -g root -m 0755 "${TMP_DIR}/kubectl/kubectl" /usr/local/bin/kubectl
+    
+    echo "enable kubectl autocomplete..."
+    echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 }
 
 install_k9s() {
